@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolehiyo Ng Subic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c0a6fdeea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+<!--info content-->
+
+<section class="about-me">
+    <div class="row">
+        <div class="inform">
+            <img class="inform"  src="images/profile.jpg" alt="">
+            <h4>HELLO, I'M</h4>
+            <h1 class="inform">Jayvee <br> Madriaga Nacino</h1>
+            <p>the creator of this website 
+            </p>
+        </div>
+        <div class="social-info">
+            <h4>Social Media</h4>
+            <h1 class="inform"></h1>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100015261609060"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jayvee_nacino/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/YutaXlX"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+
+        <div class="audio">
+            <h4>PLAY ME</h4>
+            <audio controls class="vol" src="audio/Shake It Off - Taylor Swift (Lyrics).mp3"></audio>
+        </div>
+
+        <div class="verse">
+            <h3>The LORD shall fight for you, and ye shall hold your peace</h3>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>envisions all Subiquenos to have access to 
+     <br> quality education and achieve the dream of a progressive Subic Community</p>
+     <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+     </div>
+</section>
+
+<!--java script-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
